@@ -1,0 +1,140 @@
+body {
+  font-family: 'rooney-sans', helvetica, arial, sans-serif;
+  background-color: #fff;
+}
+
+h1, p {
+  font-size: 24px;
+  line-height: 1.8em;
+  color: #303030;
+}
+
+h1 {
+  font-weight: 400;
+}
+
+p {
+  font-weight: 300;
+  -webkit-font-smoothing: antialiased;
+}
+
+a {
+  text-decoration: none;
+  color: #303030;
+  font-weight: 400;
+  -webkit-font-smoothing: normal;
+}
+
+.gocardless {
+  color: #5092DA;
+}
+
+.gocardless:hover {
+  border-bottom: 3px solid #5092DA;
+}
+
+.dnb {
+  color: #E047FF;
+}
+
+.dnb:hover {
+  border-bottom: 3px solid #E047FF;
+}
+
+.twitter {
+  color: #55acee;
+}
+
+.twitter:hover {
+  border-bottom: 3px solid #55acee;
+}
+
+.medium {
+  color: #02b875;
+}
+
+.medium:hover {
+  border-bottom: 3px solid #02b875;
+}
+
+.dribbble {
+  color: #ea4c89;
+}
+
+.dribbble:hover {
+  border-bottom: 3px solid #ea4c89;
+}
+
+.linkedin {
+  color: #00a0dc;
+}
+
+.linkedin:hover {
+  border-bottom: 3px solid #00a0dc;
+}
+
+.email {
+  color: #FF6967;
+}
+
+.email:hover {
+  border-bottom: 3px solid #FF6967;
+}
+
+.emoji {
+  font-size: 2em;
+}
+
+@media (max-width: 720px) {
+  .emoji {
+    font-size: 1em;
+  }
+}
+
+.container {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+}
+
+.content {
+  max-width: 800px;
+  margin: auto;
+  padding: 2em;
+  transition: opacity 1.5s ease-in;
+
+  /*Hide initially*/
+  opacity: 0;
+}
+
+.content.reveal {
+  opacity: 1;
+}
+
+.bolder {
+  font-weight: 400;
+  color: #202020;
+}
+
+ul.social {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.social li {
+  font-size: 24px;
+  display: inline-block;
+  margin: 0 1.8em 1em 0;
+  font-weight: 300;
+  -webkit-font-smoothing: antialiased;
+}
+
+@media (max-width: 720px) {
+  .social li {
+    display: block;
+  }
+}
