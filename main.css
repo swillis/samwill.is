@@ -146,21 +146,22 @@ ul.social {
 .email-popover {
   position: absolute;
   background-color: rgba(0,0,0,0.8);
-  padding: 10px 20px;
+  padding: 10px 18px;
   border-radius: 5px;
   color: #fff;
-  top: -70px;
-  left: -50%;
+  bottom: -60px;
+  right: -35px;
   transition: opacity .2s;
+  font-size: 18px;
 
   /* — Hide — */
-  visibility: hidden;
   opacity: 0;
+  visibility: hidden;
 }
 
 li.email:hover .email-popover {
-  visibility: visible;
   opacity: 1;
+  visibility: visible;
 }
 
 @media (max-width: 720px) {
@@ -171,14 +172,14 @@ li.email:hover .email-popover {
 
 .email-popover:before {
   content: '';
-  border-left: 10px solid transparent;
-	border-right: 10px solid transparent;
-	border-top: 10px solid black;
+  border-left: 6px solid transparent;
+	border-right: 6px solid transparent;
+	border-bottom: 6px solid black;
   opacity: .8;
   position: absolute;
-  bottom: -10px;
+  top: -6px;
   left: 50%;
-  margin-left: -10px;
+  margin-left: -6px;
 }
 
 @media (max-width: 720px) {
