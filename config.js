@@ -1,5 +1,5 @@
 System.config({
-  baseURL: "/",
+  baseURL: "",
   defaultJSExtensions: true,
   transpiler: "babel",
   babelOptions: {
@@ -12,13 +12,13 @@ System.config({
     "github:*": "jspm_packages/github/*",
     "npm:*": "jspm_packages/npm/*"
   },
-  bundles: {
-    "build.js": [
-      "main.js",
-      "npm:jquery@2.2.1.js",
-      "npm:jquery@2.2.1/dist/jquery.js"
-    ]
-  },
+  // bundles: {
+  //   "build.js": [
+  //     "main.js",
+  //     "npm:jquery@2.2.1.js",
+  //     "npm:jquery@2.2.1/dist/jquery.js"
+  //   ]
+  // },
 
   map: {
     "babel": "npm:babel-core@5.8.35",
