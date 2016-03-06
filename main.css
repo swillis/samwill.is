@@ -1,6 +1,5 @@
 body {
   font-family: 'rooney-sans', helvetica, arial, sans-serif;
-  background-color: #fff;
 }
 
 h1, p {
@@ -105,19 +104,22 @@ a:hover {
   left: 0;
   right: 0;
   display: flex;
+  background-color: white;
 }
 
 .content {
   max-width: 800px;
   margin: auto;
   padding: 2em;
-  transition: opacity 1.5s ease-in;
+  transition: opacity 2s, transform 1s;
 
-  /*Hide initially*/
+  /* — Initial state — */
+  transform: translateX(-20px);
   opacity: 0;
 }
 
 .content.reveal {
+  transform: translateX(0);
   opacity: 1;
 }
 
