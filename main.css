@@ -135,11 +135,50 @@ ul.social {
 }
 
 .social li {
+  position: relative;
   font-size: 24px;
   display: inline-block;
   margin: 0 1.8em 1em 0;
   font-weight: 300;
   -webkit-font-smoothing: antialiased;
+}
+
+.email-popover {
+  position: absolute;
+  background-color: rgba(0,0,0,0.8);
+  padding: 10px 20px;
+  border-radius: 5px;
+  color: #fff;
+  top: -70px;
+  left: -50%;
+  transition: opacity .2s;
+
+  /* — Hide — */
+  visibility: hidden;
+  opacity: 0;
+}
+
+li.email:hover .email-popover {
+  visibility: visible;
+  opacity: 1;
+}
+
+@media (max-width: 720px) {
+  .email-popover {
+    display: none;
+  }
+}
+
+.email-popover:before {
+  content: '';
+  border-left: 10px solid transparent;
+	border-right: 10px solid transparent;
+	border-top: 10px solid black;
+  opacity: .8;
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  margin-left: -10px;
 }
 
 @media (max-width: 720px) {
