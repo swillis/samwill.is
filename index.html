@@ -1,47 +1,23 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title>Sam Willis — Product Designer</title>
-    <script src="jspm_packages/system.js" charset="utf-8"></script>
-    <script src="config.js" charset="utf-8"></script>
-    <script>
-      System.import('main.js');
-    </script>
-    <script src="https://use.typekit.net/dvj7ljb.js"></script>
-    <script>try{Typekit.load({ async: true });}catch(e){}</script>
-    <link rel="stylesheet" href="main.css" media="screen" title="no title" charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="google-site-verification" content="xq4lWBqZ9q5IgL269UlUOB31XQyhdQoZcBGTmwVYJSM" />
-  </head>
-  <body>
-    <div class="container">
-      <div class="content">
-        <h1>
-          Hey there! I'm Sam Willis&thinsp;—&thinsp;a Product Designer living and working in
-          London.
-        </h1>
-        <p>
-          Currently I work at FinTech startup
-          <a href="http://gocardless.com">GoCardless</a>, where we're building
-           a recurring payments network for the internet.
-           (<a href="http://gocardless.com/jobs">We're hiring</a>!)
-        </p>
-        <p>
-          I picked up Product Design while working at a <a href="">couple</a>
-          of <a href="#">startups</a> in London before GC. Weirdly my degree
-          was actually in business.
-        </p>
-        <p>
-          I used to run a monthly meetup called Design+Banter (with my pal
-          <a href="http://twitter.com/gearoidorourke">@go</a>) and I just
-          started a new design event in London called Design Club—where the
-          creative industry figure out what's next—with
-          <a href="http://twitter.com/charlotteclancy">@charlotteclancy</a>,
-          <a href="http://twitter.com/camillaxgrey">@camillaxgrey</a> &
-          <a href="http://twitter.com/charlotteclancy">@tp</a>.
-        </p>
-      </div>
-    </div>
-  </body>
-</html>
+---
+layout: default
+---
+
+<div class="home">
+
+  <h1 class="page-heading">Posts</h1>
+
+  <ul class="post-list">
+    {% for post in site.posts %}
+      <li>
+        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+
+        <h2>
+          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title | escape }}</a>
+        </h2>
+      </li>
+    {% endfor %}
+  </ul>
+
+  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+
+</div>

@@ -1,1 +1,0 @@
-module.exports = require("npm:gh-pages@0.11.0/lib/index.js");
