@@ -1,1 +1,0 @@
-module.exports = require("npm:globby@4.0.0/index");

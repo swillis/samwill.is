@@ -1,1 +1,0 @@
-module.exports = require("npm:mimeparse@0.1.4/lib/mimeparse.js");
