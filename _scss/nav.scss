@@ -1,6 +1,10 @@
 .nav {
 	position: absolute;
 	width: 100%;
+
+	@media screen and (max-width: $mobile) {
+		position: relative;
+	}
 }
 
 .home,

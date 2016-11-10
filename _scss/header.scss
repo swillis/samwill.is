@@ -1,5 +1,14 @@
 .header {
+	display: flex;
 	height: 90vh;
 	align-items: center;
 	justify-content: center;
+}
+
+.header {
+	@media screen and (max-width: $mobile) {
+		display: block;
+		height: auto;
+		padding-bottom: $space-40;
+	}
 }
